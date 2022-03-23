@@ -6,6 +6,7 @@
 .wrapper {
     position: relative;
     scroll-snap-align: start;
+    padding: 0;
 }
 
 .player {
@@ -27,11 +28,18 @@
 }
 
 .actions {
+    /* width: 80px; */
     position: absolute;
-    bottom: 16px;
-    right: 16px;
+    bottom: 120px;
+    right: 0;
 }
 
 .action {
     color: #fff;
+    margin: .8em;
+}
+
+.action strong {
+    display: block;
+    line-height: 0;
 }
