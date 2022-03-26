@@ -1,9 +1,11 @@
-import { useRef, useState } from 'react'
 import clsx from 'clsx'
+import { useRef, useState } from 'react'
 import styles from './styles.module.css'
-import VideoPlayerActions from './VideoPlayerActions'
+import VideoPlayerActions from './VideoPlayerActions.jsx'
+import VideoDescription from './VideoDescription'
+import Header from '../Header'
 
-export default function VideoPlayer ({ src }) {
+export default function VideoPlayer (props) {
   const [playing, setPlaying] = useState(false)
   const video = useRef()
   const handlePlay = () => {
@@ -17,8 +19,12 @@ export default function VideoPlayer ({ src }) {
   const playerClassName = clsx(styles.player, {
     [styles.hidden]: playing
   })
+
+  const { src } = props
+
   return (
     <div className={styles.wrapper}>
+      <Header />
       <video
         className={styles.video}
         controls={false}
@@ -28,7 +34,9 @@ export default function VideoPlayer ({ src }) {
         src={src}
       />
       <i className={playerClassName} onClick={handlePlay} />
-      <VideoPlayerActions />
+      <VideoPlayerActions {...props} />
+      <VideoDescription {...props} isRotating={playing} />
     </div>
+
   )
 }

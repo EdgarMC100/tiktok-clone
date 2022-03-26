@@ -1,0 +1,8 @@
+.song {
+    display: flex;
+    flex-direction: row;
+}
+
+.tickerWrapper {
+    margin-left: 40px;
+}
