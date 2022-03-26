@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    margin: .8rem;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+}
+
+.menu {
+    background-image: url('https://lf16-tiktok-web.ttwstatic.com/obj/tiktok-web-us/tiktok/web/node/_next/static/images/ic_white_hamburger-a42fa4c0d32603bc67519ac5617fe2e4.svg');
+    width: 35px;
+    height: 35px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-right: 1rem;
+    font-weight: 600;
+}
+
+li>a {
+    text-decoration: none;
+    color: white;
+}
