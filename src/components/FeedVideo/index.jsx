@@ -35,7 +35,6 @@ export default function FeedVideo () {
   const [error, setError] = useState(null)
   useEffect(() => {
     getVideos().then(([error, videos]) => {
-      console.log(videos)
       if (error) return setError(error)
       setVideos(videos)
     })
