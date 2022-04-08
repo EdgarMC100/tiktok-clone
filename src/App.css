@@ -15,4 +15,6 @@ main {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     /* width: 100vw; */
+    display: block;
+    height: auto;
 }
