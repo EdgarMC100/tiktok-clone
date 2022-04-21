@@ -1,0 +1,38 @@
+.upload {
+    background: #ffffff;
+    padding: 16px;
+    min-height: 100vh;
+}
+
+.upload h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.upload form {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload input {
+    display: block;
+    padding: 4px;
+    line-height: 18px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    margin-top: 14px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.upload label {
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 16px;
+    text-align: start;
+}
+
+.upload form>* {
+    margin-bottom: 16px;
+}

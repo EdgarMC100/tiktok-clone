@@ -1,0 +1,86 @@
+.dnd {
+    border-radius: 5px;
+    background: #f4f4f4;
+    color: #aaa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px;
+    aspect-ratio: 9/16;
+}
+
+.dnd img {
+    margin-bottom: 24px;
+}
+
+.dnd h4 {
+    color: #999;
+    font-size: 1.1rem;
+    margin: 0 0 16px;
+}
+
+.dnd h5 {
+    color: #aaa;
+    font-size: 1.1rem;
+}
+
+.dndAccept {
+    background: rgb(221, 255, 202)
+}
+
+.dndReject {
+    animation: shake .4s ease;
+    background: rgb(255, 202, 202);
+}
+
+.uploading {
+    animation: pulse .1s infinite ease;
+    background: #1fffff;
+}
+
+.uploaded {
+    background: rgb(182, 255, 140);
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: .8;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(1deg)
+    }
+    15% {
+        transform: translate(-1px, -1px) rotate(-1deg)
+    }
+    30% {
+        transform: translate(1px, 1px) rotate(1deg)
+    }
+    45% {
+        transform: translate(-1px, -1px) rotate(-1deg)
+    }
+    60% {
+        transform: translate(1px, 1px) rotate(1deg)
+    }
+    75% {
+        transform: translate(-1px, -1px) rotate(-1deg)
+    }
+    95% {
+        transform: translate(1px, 1px) rotate(1deg)
+    }
+    100% {
+        transform: translate(-1px, -1px) rotate(-1deg)
+    }
+}
