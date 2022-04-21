@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getVideos } from '../../services'
 import VideoPlayer from '../VideoPlayer'
-import styles from './styles.module.css'
 // const VIDEOS = [
 //   {
 //     id: 1,
@@ -30,7 +29,7 @@ import styles from './styles.module.css'
 //   }
 
 // ]
-export default function FeedVideo () {
+export default function FeedVideos () {
   const [videos, setVideos] = useState([])
   const [error, setError] = useState(null)
   useEffect(() => {
